@@ -54,14 +54,22 @@
 		842C02281CE0540F0017371B /* Virtual Reality */ = {
 			isa = PBXGroup;
 			children = (
-				842C02291CE0540F0017371B /* AppDelegate.swift */,
 				842C022B1CE0540F0017371B /* ViewController.swift */,
 				842C022D1CE0540F0017371B /* Main.storyboard */,
+				842C023B1CE054FA0017371B /* Supported Files */,
+			);
+			path = "Virtual Reality";
+			sourceTree = "<group>";
+		};
+		842C023B1CE054FA0017371B /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
 				842C02301CE0540F0017371B /* Assets.xcassets */,
+				842C02291CE0540F0017371B /* AppDelegate.swift */,
 				842C02321CE0540F0017371B /* LaunchScreen.storyboard */,
 				842C02351CE0540F0017371B /* Info.plist */,
 			);
-			path = "Virtual Reality";
+			name = "Supported Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
