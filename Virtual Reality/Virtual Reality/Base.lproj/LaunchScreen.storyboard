@@ -18,17 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-Kc-N0e">
-                                <rect key="frame" x="225" y="225" width="150" height="150"/>
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="OxX-Py-FNT"/>
+                                    <constraint firstAttribute="width" constant="100" id="q87-S0-zSA"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30196078431372547" green="0.49019607843137253" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.49411764705882355" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="205" id="73c-Pi-gyG"/>
-                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cpx-OD-stg"/>
-                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="paz-cC-e4S"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="230" id="9g0-LF-hKg"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aI8-nG-ENj"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xdu-Li-EzZ"/>
                         </constraints>
                     </view>
                 </viewController>
