@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		842C022A1CE0540F0017371B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C02291CE0540F0017371B /* AppDelegate.swift */; };
-		842C022C1CE0540F0017371B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C022B1CE0540F0017371B /* ViewController.swift */; };
 		842C022F1CE0540F0017371B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C022D1CE0540F0017371B /* Main.storyboard */; };
 		842C02311CE0540F0017371B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C02301CE0540F0017371B /* Assets.xcassets */; };
 		842C02341CE0540F0017371B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C02321CE0540F0017371B /* LaunchScreen.storyboard */; };
+		842C023D1CE069FC0017371B /* Video360GLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C023C1CE069FC0017371B /* Video360GLKViewController.swift */; };
+		842C023F1CE06A4A0017371B /* UnityGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C023E1CE06A4A0017371B /* UnityGLKViewController.swift */; };
+		842C02431CE06A750017371B /* GoogleCardboardGLKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C02421CE06A750017371B /* GoogleCardboardGLKViewController.swift */; };
+		842C02451CE06E870017371B /* VirtualRealityTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C02441CE06E870017371B /* VirtualRealityTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		842C02261CE0540E0017371B /* Virtual Reality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Reality.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C02291CE0540F0017371B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		842C022B1CE0540F0017371B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		842C022E1CE0540F0017371B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842C02301CE0540F0017371B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842C02331CE0540F0017371B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842C02351CE0540F0017371B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842C023C1CE069FC0017371B /* Video360GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video360GLKViewController.swift; sourceTree = "<group>"; };
+		842C023E1CE06A4A0017371B /* UnityGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityGLKViewController.swift; sourceTree = "<group>"; };
+		842C02421CE06A750017371B /* GoogleCardboardGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCardboardGLKViewController.swift; sourceTree = "<group>"; };
+		842C02441CE06E870017371B /* VirtualRealityTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRealityTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,10 @@
 		842C02281CE0540F0017371B /* Virtual Reality */ = {
 			isa = PBXGroup;
 			children = (
-				842C022B1CE0540F0017371B /* ViewController.swift */,
+				842C02441CE06E870017371B /* VirtualRealityTabBarController.swift */,
+				842C023C1CE069FC0017371B /* Video360GLKViewController.swift */,
+				842C023E1CE06A4A0017371B /* UnityGLKViewController.swift */,
+				842C02421CE06A750017371B /* GoogleCardboardGLKViewController.swift */,
 				842C022D1CE0540F0017371B /* Main.storyboard */,
 				842C023B1CE054FA0017371B /* Supported Files */,
 			);
@@ -143,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842C022C1CE0540F0017371B /* ViewController.swift in Sources */,
 				842C022A1CE0540F0017371B /* AppDelegate.swift in Sources */,
+				842C02451CE06E870017371B /* VirtualRealityTabBarController.swift in Sources */,
+				842C02431CE06A750017371B /* GoogleCardboardGLKViewController.swift in Sources */,
+				842C023D1CE069FC0017371B /* Video360GLKViewController.swift in Sources */,
+				842C023F1CE06A4A0017371B /* UnityGLKViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +308,7 @@
 				842C023A1CE0540F0017371B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,147 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lKh-wY-aUe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Virtual Reality Tab Bar Controller-->
+        <scene sceneID="bL4-qe-hi4">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="lKh-wY-aUe" customClass="VirtualRealityTabBarController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OI8-jX-My8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7eP-UW-nRD" kind="relationship" relationship="viewControllers" id="T5G-uS-1Hi"/>
+                        <segue destination="rnz-cE-RBk" kind="relationship" relationship="viewControllers" id="gxU-Op-DZt"/>
+                        <segue destination="sxr-fE-IDs" kind="relationship" relationship="viewControllers" id="Elb-8n-i6t"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydt-8b-G3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Video 360-->
+        <scene sceneID="za5-EK-aF4">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="baU-qN-608" customClass="Video360GLKViewController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0Qf-RT-gY6"/>
+                        <viewControllerLayoutGuide type="bottom" id="UmW-OM-cNc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="17n-zU-6T1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <connections>
+                            <outlet property="delegate" destination="baU-qN-608" id="8at-v7-90y"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" title="Video 360" id="EIO-JS-YCE"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7V-C5-qMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1440" y="2587"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="FnC-do-zLc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7eP-UW-nRD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="D3o-iJ-tuT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I8k-xP-hPj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="baU-qN-608" kind="relationship" relationship="rootViewController" id="L2c-c9-eJR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xoc-Hh-T77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="3247"/>
+        </scene>
+        <!--Unity-->
+        <scene sceneID="KDt-aJ-amr">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="nzN-Sr-ieZ" customClass="UnityGLKViewController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="azp-9b-yum"/>
+                        <viewControllerLayoutGuide type="bottom" id="8rW-RH-N5G"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="EAH-xH-6wD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="nzN-Sr-ieZ" id="cZE-wU-jmY"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" title="Unity" id="lt5-D4-yyK"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV1-jp-XgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2611" y="61"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZyY-e7-6dE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rnz-cE-RBk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GFe-ul-A5Q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pjd-bh-zS1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nzN-Sr-ieZ" kind="relationship" relationship="rootViewController" id="JeM-1q-FLc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEe-4b-d4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623" y="721"/>
+        </scene>
+        <!--Google Cardboard-->
+        <scene sceneID="3Rc-hA-Seg">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="5I1-ed-cFt" customClass="GoogleCardboardGLKViewController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lqw-sa-BPd"/>
+                        <viewControllerLayoutGuide type="bottom" id="MX2-qH-U3f"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="c7S-UV-TJv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="5I1-ed-cFt" id="lHr-SG-WRC"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" title="Google Cardboard" id="7hf-fr-5uz"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDB-Xh-tJm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="587"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="P66-hJ-Mn4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxr-fE-IDs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="XWy-8F-J6D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W51-5e-xMe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5I1-ed-cFt" kind="relationship" relationship="rootViewController" id="aWP-Hf-oZL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1e-NO-Wnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-479" y="441"/>
         </scene>
     </scenes>
 </document>

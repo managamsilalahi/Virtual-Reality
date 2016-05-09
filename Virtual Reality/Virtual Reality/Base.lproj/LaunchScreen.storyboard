@@ -17,30 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Reality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYz-w4-PFJ">
-                                <rect key="frame" x="215" y="289" width="170" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="9h8-KE-HWG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 Managam Silalahi. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-72-gS8">
+                                <rect key="frame" x="0.0" y="559" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 Managam Silalahi. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-72-gS8">
-                                <rect key="frame" x="0.0" y="559" width="600" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Reality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYz-w4-PFJ">
+                                <rect key="frame" x="200" y="289" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="tIR-Yz-Orq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0Y4-lz-e0M"/>
                             <constraint firstAttribute="bottom" secondItem="yUp-72-gS8" secondAttribute="bottom" constant="20" symbolic="YES" id="0a6-T1-Xkr"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="303-EH-vpX"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ETz-C0-RUs"/>
-                            <constraint firstItem="yUp-72-gS8" firstAttribute="centerX" secondItem="wYz-w4-PFJ" secondAttribute="centerX" id="LO3-xi-qQY"/>
+                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MeZ-dL-jU8"/>
+                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerX" secondItem="yUp-72-gS8" secondAttribute="centerX" id="ReW-XB-mLR"/>
+                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="YUP-Zk-mwD"/>
                             <constraint firstItem="yUp-72-gS8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hls-RC-Ug6"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="vnJ-Of-bvM"/>
                         </constraints>
                     </view>
                 </viewController>
