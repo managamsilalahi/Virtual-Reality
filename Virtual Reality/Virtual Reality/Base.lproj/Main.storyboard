@@ -23,7 +23,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydt-8b-G3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Video 360-->
+        <!--Video 360°-->
         <scene sceneID="za5-EK-aF4">
             <objects>
                 <glkViewController preferredFramesPerSecond="30" id="baU-qN-608" customClass="Video360GLKViewController" customModule="Virtual_Reality" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="baU-qN-608" id="8at-v7-90y"/>
                         </connections>
                     </glkView>
-                    <navigationItem key="navigationItem" title="Video 360" id="EIO-JS-YCE"/>
+                    <navigationItem key="navigationItem" title="Video 360°" id="EIO-JS-YCE"/>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7V-C5-qMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

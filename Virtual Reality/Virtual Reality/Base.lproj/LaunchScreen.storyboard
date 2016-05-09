@@ -17,30 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 Managam Silalahi. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-72-gS8">
-                                <rect key="frame" x="0.0" y="559" width="600" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Reality" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYz-w4-PFJ">
-                                <rect key="frame" x="200" y="289" width="200" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-Kc-N0e">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="tIR-Yz-Orq"/>
+                                    <constraint firstAttribute="width" constant="150" id="OxX-Py-FNT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.49019607843137253" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0Y4-lz-e0M"/>
-                            <constraint firstAttribute="bottom" secondItem="yUp-72-gS8" secondAttribute="bottom" constant="20" symbolic="YES" id="0a6-T1-Xkr"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MeZ-dL-jU8"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="centerX" secondItem="yUp-72-gS8" secondAttribute="centerX" id="ReW-XB-mLR"/>
-                            <constraint firstItem="wYz-w4-PFJ" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="YUP-Zk-mwD"/>
-                            <constraint firstItem="yUp-72-gS8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="hls-RC-Ug6"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="205" id="73c-Pi-gyG"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cpx-OD-stg"/>
+                            <constraint firstItem="HhK-Kc-N0e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="paz-cC-e4S"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchscreen" width="512" height="512"/>
+    </resources>
 </document>
