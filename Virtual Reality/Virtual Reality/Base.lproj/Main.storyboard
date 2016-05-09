@@ -44,11 +44,11 @@
             </objects>
             <point key="canvasLocation" x="1440" y="2587"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="FnC-do-zLc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7eP-UW-nRD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="D3o-iJ-tuT"/>
+                    <tabBarItem key="tabBarItem" title="" image="video360" id="D3o-iJ-tuT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I8k-xP-hPj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -84,11 +84,11 @@
             </objects>
             <point key="canvasLocation" x="2611" y="61"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ZyY-e7-6dE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rnz-cE-RBk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GFe-ul-A5Q"/>
+                    <tabBarItem key="tabBarItem" title="" image="unity" id="GFe-ul-A5Q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pjd-bh-zS1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -124,11 +124,11 @@
             </objects>
             <point key="canvasLocation" x="978" y="587"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="P66-hJ-Mn4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxr-fE-IDs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XWy-8F-J6D"/>
+                    <tabBarItem key="tabBarItem" title="" image="googlecardboard" id="XWy-8F-J6D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W51-5e-xMe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -144,4 +144,9 @@
             <point key="canvasLocation" x="-479" y="441"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="googlecardboard" width="57" height="57"/>
+        <image name="unity" width="57" height="57"/>
+        <image name="video360" width="57" height="57"/>
+    </resources>
 </document>
