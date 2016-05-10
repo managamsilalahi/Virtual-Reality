@@ -39,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = UIColor(red: 70.0/255.0, green: 152.0/255.0, blue: 210.0/255.0, alpha: 1.0)
         //UITabBar.appearance().selectedImageTintColor = UIImage(named: "tabitem_selected")
         
+        application.statusBarHidden = true
+        
         return true
     }
 
