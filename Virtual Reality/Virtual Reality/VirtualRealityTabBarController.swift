@@ -15,6 +15,10 @@ class VirtualRealityTabBarController: UITabBarController {
         return UIStatusBarStyle.LightContent
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func viewWillLayoutSubviews() {
         
         var tabFrame: CGRect = self.tabBar.frame
