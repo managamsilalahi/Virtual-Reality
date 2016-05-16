@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840FD83A1CE969AE00B66CFF /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD8391CE969AE00B66CFF /* Renderable.swift */; };
+		840FD8401CE96A2000B66CFF /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD83F1CE96A2000B66CFF /* Camera.swift */; };
+		840FD8421CE96A3900B66CFF /* Skysphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD8411CE96A3900B66CFF /* Skysphere.swift */; };
+		840FD8441CE96A4100B66CFF /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD8431CE96A4100B66CFF /* Vertex.swift */; };
+		840FD8461CE96ABE00B66CFF /* Video36GLKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD8451CE96ABE00B66CFF /* Video36GLKView.swift */; };
+		840FD8481CE96ADE00B66CFF /* VideoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840FD8471CE96ADE00B66CFF /* VideoRender.swift */; };
 		842C022A1CE0540F0017371B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C02291CE0540F0017371B /* AppDelegate.swift */; };
 		842C022F1CE0540F0017371B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C022D1CE0540F0017371B /* Main.storyboard */; };
 		842C02311CE0540F0017371B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C02301CE0540F0017371B /* Assets.xcassets */; };
@@ -18,13 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840FD8381CE9697C00B66CFF /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
+		840FD8391CE969AE00B66CFF /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		840FD83F1CE96A2000B66CFF /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		840FD8411CE96A3900B66CFF /* Skysphere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skysphere.swift; sourceTree = "<group>"; };
+		840FD8431CE96A4100B66CFF /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		840FD8451CE96ABE00B66CFF /* Video36GLKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video36GLKView.swift; sourceTree = "<group>"; };
+		840FD8471CE96ADE00B66CFF /* VideoRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRender.swift; sourceTree = "<group>"; };
 		842C02261CE0540E0017371B /* Virtual Reality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Reality.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C02291CE0540F0017371B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842C022E1CE0540F0017371B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842C02301CE0540F0017371B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842C02331CE0540F0017371B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842C02351CE0540F0017371B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		842C023C1CE069FC0017371B /* Video360GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video360GLKViewController.swift; sourceTree = "<group>"; };
+		842C023C1CE069FC0017371B /* Video360GLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Video360GLKViewController.swift; path = "Virtual Reality/Video360GLKViewController.swift"; sourceTree = "<group>"; };
 		842C023E1CE06A4A0017371B /* UnityGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityGLKViewController.swift; sourceTree = "<group>"; };
 		842C02421CE06A750017371B /* GoogleCardboardGLKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCardboardGLKViewController.swift; sourceTree = "<group>"; };
 		842C02441CE06E870017371B /* VirtualRealityTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRealityTabBarController.swift; sourceTree = "<group>"; };
@@ -41,6 +54,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840FD8341CE968CE00B66CFF /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				840FD8381CE9697C00B66CFF /* videoplayback.mp4 */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		840FD8351CE9692300B66CFF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				840FD8361CE9693900B66CFF /* Domain */,
+				840FD8371CE9694A00B66CFF /* Player */,
+			);
+			name = Sources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		840FD8361CE9693900B66CFF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				840FD83B1CE969C300B66CFF /* Renderable */,
+				840FD83C1CE969CC00B66CFF /* Camera */,
+				840FD83D1CE969D600B66CFF /* Objects */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		840FD8371CE9694A00B66CFF /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				842C023C1CE069FC0017371B /* Video360GLKViewController.swift */,
+				840FD8451CE96ABE00B66CFF /* Video36GLKView.swift */,
+				840FD8471CE96ADE00B66CFF /* VideoRender.swift */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		840FD83B1CE969C300B66CFF /* Renderable */ = {
+			isa = PBXGroup;
+			children = (
+				840FD8391CE969AE00B66CFF /* Renderable.swift */,
+			);
+			name = Renderable;
+			sourceTree = "<group>";
+		};
+		840FD83C1CE969CC00B66CFF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				840FD83F1CE96A2000B66CFF /* Camera.swift */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		840FD83D1CE969D600B66CFF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				840FD8411CE96A3900B66CFF /* Skysphere.swift */,
+				840FD8431CE96A4100B66CFF /* Vertex.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		840FD83E1CE969DE00B66CFF /* Video360 */ = {
+			isa = PBXGroup;
+			children = (
+				840FD8351CE9692300B66CFF /* Sources */,
+				840FD8341CE968CE00B66CFF /* Video */,
+			);
+			name = Video360;
+			sourceTree = "<group>";
+		};
 		842C021D1CE0540E0017371B = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +145,8 @@
 		842C02281CE0540F0017371B /* Virtual Reality */ = {
 			isa = PBXGroup;
 			children = (
+				840FD83E1CE969DE00B66CFF /* Video360 */,
 				842C02441CE06E870017371B /* VirtualRealityTabBarController.swift */,
-				842C023C1CE069FC0017371B /* Video360GLKViewController.swift */,
 				842C023E1CE06A4A0017371B /* UnityGLKViewController.swift */,
 				842C02421CE06A750017371B /* GoogleCardboardGLKViewController.swift */,
 				842C022D1CE0540F0017371B /* Main.storyboard */,
@@ -153,10 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840FD8421CE96A3900B66CFF /* Skysphere.swift in Sources */,
 				842C022A1CE0540F0017371B /* AppDelegate.swift in Sources */,
+				840FD8441CE96A4100B66CFF /* Vertex.swift in Sources */,
 				842C02451CE06E870017371B /* VirtualRealityTabBarController.swift in Sources */,
+				840FD8481CE96ADE00B66CFF /* VideoRender.swift in Sources */,
+				840FD8461CE96ABE00B66CFF /* Video36GLKView.swift in Sources */,
 				842C02431CE06A750017371B /* GoogleCardboardGLKViewController.swift in Sources */,
+				840FD83A1CE969AE00B66CFF /* Renderable.swift in Sources */,
 				842C023D1CE069FC0017371B /* Video360GLKViewController.swift in Sources */,
+				840FD8401CE96A2000B66CFF /* Camera.swift in Sources */,
 				842C023F1CE06A4A0017371B /* UnityGLKViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
